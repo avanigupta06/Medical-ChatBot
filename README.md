@@ -6,8 +6,7 @@ This project is an **AI-powered medical chatbot** using **Llama-2 (7B) LLM**, **
 
 ## 🚀 Features
 - **Conversational AI:** Context-aware responses to medical queries  
-- **Semantic Search:** Powered by **Pinecone Vector Store**  
-- **Fast Query Handling:** Backend via **Flask** with AJAX support  
+- **Semantic Search:** Powered by **Pinecone Vector Store**   
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, Javascript (Bootstrap) 

@@ -1,6 +1,8 @@
 # Medical-ChatBot
 ## AI-Powered Medical Chatbot
 
+# Demo file is **trails.ipynb** in which how chatbot is working is shown.
+
 ## 🩺 Overview
 This project is an **AI-powered medical chatbot** using **Llama-2 (7B) LLM**, **Pinecone**, and **LangChain** to answer medical queries from a vectorized knowledge base.
 

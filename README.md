@@ -1,7 +1,5 @@
-# Medical-ChatBot
+# MediQuery
 ## AI-Powered Medical Chatbot
-
-# Demo file is **trails.ipynb** in which how chatbot is working is shown.
 
 ## 🩺 Overview
 This project is an **AI-powered medical chatbot** using **Llama-2 (7B) LLM**, **Pinecone**, and **LangChain** to answer medical queries from a vectorized knowledge base.
@@ -25,4 +23,44 @@ This project is an **AI-powered medical chatbot** using **Llama-2 (7B) LLM**, **
 ✅ Designed a custom prompt template to ensure accurate, reliable, and structured medical responses.
 ✅ Deployed serverless infrastructure on Pinecone (AWS - us-east-1 region) for scalable and fast vector searches.
 
-![chatbot](https://github.com/user-attachments/assets/aed97a13-5f5d-4bb6-b8f9-62f0c3ece110)
+![Demo Screenshot](screenshots/1.png)
+
+---
+
+## 📥 Installation & Usage
+
+1️⃣ Clone the Repository
+   ```bash
+   git clone https://github.com/your-username/Medical-ChatBot.git
+    cd Medical-ChatBot
+
+   ```
+
+2️⃣ Create a Virtual Environment
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # Linux/Mac
+   venv\Scripts\activate      # Windows
+   ```
+3️⃣ Install Dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4️⃣ Set Up Environment Variables
+   ```bash
+   Create a .env file in the project root:
+
+    PINECONE_API_KEY=your_pinecone_api_key
+   ```
+
+5️⃣ Run the Application
+```bash
+   python app.py
+   ```
+   The app will be live at 👉 http://127.0.0.1:5000/
+
+6️⃣ Interact with the Chatbot
+
+Open the browser and start asking medical queries 💬.
+---

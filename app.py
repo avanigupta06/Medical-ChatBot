@@ -1,12 +1,11 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, request
 from src.helper import download_hugging_face_embeddings
-from langchain.vectorstores import Pinecone
+from langchain_community.vectorstores import Pinecone
 from langchain_pinecone import PineconeVectorStore
-import pinecone
 from pinecone.grpc import PineconeGRPC as Pinecone
 from pinecone import ServerlessSpec
 from langchain.prompts import PromptTemplate
-from langchain.llms import CTransformers
+from langchain_community.llms import CTransformers
 from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
 from src.prompt import *
@@ -17,7 +16,7 @@ app = Flask(__name__)
 load_dotenv()
 
 PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
-PINECONE_API_ENV = os.environ.get('PINECONE_API_ENV')
+
 
 
 embeddings = download_hugging_face_embeddings()
@@ -55,7 +54,7 @@ qa=RetrievalQA.from_chain_type(
 
 @app.route("/")
 def index():
-    return render_template('chat.html')
+    return render_template('index.html')
 
 
 
